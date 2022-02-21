@@ -1,0 +1,8 @@
+FROM gcc:9.4.0
+
+MAINTAINER zhoukan "xiningbank@gmail.com"
+
+ENV LANG C.UTF-8
+
+RUN echo "alias ll='ls -lh --color=auto'" >> ~/.bashrc
+
