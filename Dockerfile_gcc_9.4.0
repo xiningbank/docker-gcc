@@ -2,6 +2,10 @@ FROM gcc:9.4.0
 
 MAINTAINER zhoukan "xiningbank@gmail.com"
 
+RUN apt-get update
+RUN apt-get install vim -y
+RUN apt-get install gdb -y
+
 ENV LANG C.UTF-8
 
 RUN echo "alias ll='ls -lh --color=auto'" >> ~/.bashrc
