@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+    gcc:
+        build:
+            context: ./Dockerfiles
+            dockerfile: ${GCC_DOCKERFILE}
+        container_name: ${GCC_CONTAINER:-gcc}
+        volumes:
+            - ${HOST_SRC}:/var/src
+            - ${HOST_BIN}:/var/bin
+        environment:
+            LANG: C.UTF-8
+        tty: true

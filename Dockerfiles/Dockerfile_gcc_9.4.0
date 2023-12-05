@@ -9,4 +9,3 @@ RUN apt-get install gdb -y
 ENV LANG C.UTF-8
 
 RUN echo "alias ll='ls -lh --color=auto'" >> ~/.bashrc
-
